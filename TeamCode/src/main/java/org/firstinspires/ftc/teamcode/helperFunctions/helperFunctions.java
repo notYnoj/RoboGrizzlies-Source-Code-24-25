@@ -1,5 +1,4 @@
 package org.firstinspires.ftc.teamcode.helperFunctions;
-
 public class helperFunctions {
     public double Clip(double x){
         if(x>1.0){

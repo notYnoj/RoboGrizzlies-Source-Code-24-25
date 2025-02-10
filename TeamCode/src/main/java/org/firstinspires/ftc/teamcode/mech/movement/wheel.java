@@ -8,7 +8,6 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.Range;
-
 public class wheel {
     //Define our motor for the wheel
     private DcMotor motor;
@@ -30,5 +29,4 @@ public class wheel {
     public double getPower(){
         return motor.getPower();
     }
-
 }

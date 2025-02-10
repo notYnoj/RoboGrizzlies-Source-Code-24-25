@@ -16,18 +16,15 @@ public class motor {
         m = hardwareMap.get(DcMotor.class, loc);
         help = new helperFunctions();
         m.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-
         // Turn the motor back on, required if you use STOP_AND_RESET_ENCODER
         m.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         m.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-
         if (reverse) {
             m.setDirection(DcMotor.Direction.REVERSE);
         }
     }
     public void setPower(double p) {
         m.setPower(help.Clip(p));
-
     }
     public double getPower() {
         return m.getPower();

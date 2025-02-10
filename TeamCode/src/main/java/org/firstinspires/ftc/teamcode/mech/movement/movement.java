@@ -1,11 +1,9 @@
 package org.firstinspires.ftc.teamcode.mech.movement;
-
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 import com.acmerobotics.dashboard.config.Config;
 import org.firstinspires.ftc.teamcode.mech.movement.goBuildaPinPointDriver.GoBildaPinpointDriver;
 import org.firstinspires.ftc.teamcode.mech.movement.goBuildaPinPointDriver.Pose2D;
-
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 public class movement {
     public GoBildaPinpointDriver odo;
@@ -19,6 +17,9 @@ public class movement {
     public static double FL_PERCENT = 1.0;
     public static double BL_PERCENT = 1;
     public double power = 1.0;
+    public static double x0;
+    public static double y0;
+    public static double h0;
 
     public movement(LinearOpMode l, double x, double y, double h){
         li = l;
@@ -33,6 +34,9 @@ public class movement {
         FR = new wheel(l.hardwareMap, "FR", false);
         BL = new wheel(l.hardwareMap, "BL", false);
         BR = new wheel(l.hardwareMap, "BR", true);
+        x0 = x;
+        y0 = y;
+        h0 = h;
     }
     public boolean is_busy(){
         return (FL.getPower() > 0 || FR.getPower() > 0 || BL.getPower() > 0  || BR.getPower() > 0 );

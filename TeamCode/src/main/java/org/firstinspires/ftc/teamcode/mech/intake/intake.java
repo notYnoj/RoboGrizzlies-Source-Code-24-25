@@ -6,14 +6,14 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
-import com.qualcomm.robotcore.util.Range;
+//TODO: Integrate CV with this
 public class intake {
     CRServo active_intake;
     public static double intake_constant = 1.0;
     public intake(LinearOpMode l){
         l.hardwareMap.get(Servo.class, "active_intake");
     }
-    public void intake(){
+    public void takeIn(){
         active_intake.setPower(intake_constant);
     }
     public void eject(){
