@@ -16,6 +16,13 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.acmerobotics.dashboard:dashboard:0.4.16'
     implementation 'com.tambapps.fft4j:fft4j:2.0'
+    implementation 'edu.wpi.first.cscore:cscore-java:2021.+ '
+    implementation 'edu.wpi.first.cameraserver:cameraserver-java:2021.+'
+    implementation 'edu.wpi.first.ntcore:ntcore-java:2021.+'
+    implementation 'edu.wpi.first.wpilibj:wpilibj-java:2021.+'
+    implementation 'edu.wpi.first.wpiutil:wpiutil-java:2021.+'
+    implementation 'edu.wpi.first.hal:hal-java:2021.+'
+    implementation 'edu.wpi.first.thirdparty.frc2021.opencv:opencv-java:3.4.7-5'
 
 }
 

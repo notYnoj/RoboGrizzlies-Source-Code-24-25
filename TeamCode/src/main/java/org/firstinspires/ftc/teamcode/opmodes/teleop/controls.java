@@ -28,16 +28,17 @@ public class controls {
             robot.arm.placeSpecimen();
         }
         if(op.gamepad1.y){
-            robot.arm.outTank();
+            robot.arm.hang();
         }
         if(op.gamepad1.b){
             robot.arm.inTank();
+            robot.intake.takeIn();
         }
         if(op.gamepad1.a){
-            robot.arm.highBasket();
+            robot.arm.outTank();
         }
         if(op.gamepad1.x){
-            robot.arm.hang();
+            robot.arm.highBasket();
         }
     }
 }
